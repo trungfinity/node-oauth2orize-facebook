@@ -1,0 +1,19 @@
+{
+  "name": "oauth2orize-facebook",
+  "version": "1.0.0",
+  "description": "Facebook token exchange middleware for OAuth2 server toolkit `oauth2orize`.",
+  "keywords": [
+    "oauth2orize",
+    "facebook"
+  ],
+  "license": "MIT",
+  "author": "Trung Nguyen <i@meo.guru> (http://meo.guru)",
+  "repository": "meoguru/node-oauth2orize-facebook",
+  "peerDependencies": {
+    "oauth2orize": "^1.0.1"
+  },
+  "dependencies": {
+    "object-assign": "^2.0.0",
+    "request": "^2.53.0"
+  }
+}
