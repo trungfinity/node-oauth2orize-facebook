@@ -1,6 +1,6 @@
 {
   "name": "oauth2orize-facebook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Facebook token exchange middleware for OAuth2 server toolkit `oauth2orize`.",
   "keywords": [
     "oauth2orize",
