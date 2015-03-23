@@ -49,11 +49,11 @@ module.exports = function (opts, issue) {
       }
 
       if (scope) {
-        for (let i = 0, len = separators.length; i < len; i++) {
+        for (var i = 0, len = separators.length; i < len; i++) {
           // Only separates on the first matching separator.
           // This allows for a sort of separator "priority"
           // (ie, favors spaces then fallback to commas).
-          let separated = scope.split(separators[i]);
+          var separated = scope.split(separators[i]);
 
           if (separated.length > 1) {
             scope = separated;
