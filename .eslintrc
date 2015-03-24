@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "dot-notation": [ 2, { "allowPattern": "^[a-z]+(_[a-z\\d]+)+$" }],
+    "no-shadow": 0,
+    "quotes": "single",
+    "strict": "global"
+  }
+}

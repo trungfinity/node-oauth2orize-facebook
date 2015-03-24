@@ -8,12 +8,22 @@
   ],
   "license": "MIT",
   "author": "Trung Nguyen <i@meo.guru> (http://meo.guru)",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "lib/index.js",
   "repository": "meoguru/node-oauth2orize-facebook",
-  "peerDependencies": {
-    "oauth2orize": "^1.0.1"
+  "scripts": {
+    "test": "eslint lib/"
   },
   "dependencies": {
     "object-assign": "^2.0.0",
     "request": "^2.53.0"
+  },
+  "peerDependencies": {
+    "oauth2orize": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^0.17.1"
   }
 }
