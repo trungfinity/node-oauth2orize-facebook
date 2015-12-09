@@ -47,6 +47,8 @@ Required scopes allows the exchange middleware to throw an error if the user doe
 The requiredScopes are specified within the options (`opts`) object.
 
 ```js
+// ...
+
 server.exchange(
     oauth2orizeFacebook(
         {
