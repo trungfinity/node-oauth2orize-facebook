@@ -38,6 +38,26 @@ server.exchange(oauth2orizeFacebook(function (client, profile, scope, cb) {
 }));
 ```
 
+
+## Options
+
+**requiredScopes**
+
+Required scopes allows the exchange middleware to throw an error if the user does not allow a permission required for the application to work.
+The requiredScopes are specified within the options (`opts`) object.
+
+```
+server.exchange(
+    oauth2orizeFacebook(
+        {
+            requiredScopes: ['scope1', 'scope2']
+        },
+        function (client, profile, scope, cb) {
+            // ...
+        }
+    )
+);
+```
 ## License
 
 MIT licensed.
