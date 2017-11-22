@@ -13,13 +13,24 @@ npm i oauth2orize-facebook -S
 
 ## Usage
 
+Before using this package, you should enable the 'Require App Secret' option in the advanced settings of your Facebook app.
+You also must provide the app secret by exporting it
+
+```sh
+export FB_APP_SECRET={your Facebook app secret}
+```
+
+or by adding FB_APP_SECRET={your Facebook app secret} to your .env file.
+
+Then, you can have fun
+
 ```js
 var oauth2orize = require('oauth2orize');
 var oauth2orizeFacebook = require('oauth2orize-facebook');
 
 var server = oauth2orize.createServer();
 
-server.exchange(oauth2orizeFacebook(function (client, profile, scope, cb) {
+server.exchange(oauth2orizeFacebook(['email', 'first_name', 'last_name'], function (client, profile, scope, cb) {
   // Get access token from client and Facebook profile information.
   var accessToken = 'access token';
 
